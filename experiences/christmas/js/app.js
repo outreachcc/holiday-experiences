@@ -155,8 +155,20 @@
       const own = state.scene.speakVerse && state.scene.speakVerse(i, step, base, run);
       if (own) await own;
       else {
-        if (state.scene.speaking) state.scene.speaking(base + ".verse", step.verse);
-        await say(run, base + ".verse", step.verse.text + " " + spokenRef(step.verse.ref), true);
+        const vid = base + ".verse", vtext = step.verse.text + " " + spokenRef(step.verse.ref);
+        const talk = say(run, vid, vtext, true);
+        // Tell the scene who is speaking only once the recording is actually playing. Lines are fetched (phones) or
+        // buffered (PC, Pi) first, and until then the scene has no audio clock and would move the mouth on its own
+        // guess, so the mouth started before the words. No recording (computer voice): start the mouth right away.
+        if (state.scene.speaking) {
+          let ended = false; talk.then(() => { ended = true; });
+          if (A.hasRecording(vid, vtext)) {
+            const t0 = performance.now();
+            await new Promise(res => { const wait = () => (ended || !alive(run) || A.currentTime() != null || performance.now() - t0 > 5000) ? res() : requestAnimationFrame(wait); wait(); });
+          }
+          if (!ended && alive(run)) state.scene.speaking(vid, step.verse);
+        }
+        await talk;
         if (state.scene.speaking) state.scene.speaking(null);
       }
       if (!alive(run)) return false;

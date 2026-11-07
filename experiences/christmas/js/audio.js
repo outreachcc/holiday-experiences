@@ -260,7 +260,10 @@
     });
   };
 
-  A.currentTime = () => voice ? Math.max(0, ctx.currentTime - voice.t0) : (currentAudio && !currentAudio.paused ? currentAudio.currentTime : null);
+  // Where the listener is in the line right now. Through the sound engine, the speaker (and especially Bluetooth)
+  // plays a little behind the engine's clock, so that delay is taken off; otherwise mouths and caption words run ahead.
+  const outLag = () => { const l = ctx && (ctx.outputLatency || 0); return l > 0 && l < 0.6 ? l : 0; };
+  A.currentTime = () => voice ? Math.max(0, ctx.currentTime - voice.t0 - outLag()) : (currentAudio && !currentAudio.paused ? currentAudio.currentTime : null);
   A.hasRecording = (id, text) => { const e = manifest[id]; return !!(text && e && e.hash === A.hash(text) && A.narrationEnabled && !FAST); };
 
   A.stopSpeech = function () {
