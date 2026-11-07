@@ -57,9 +57,7 @@ def build_holidays(exps):
     out = DIST / "holidays"
     if out.exists():
         shutil.rmtree(out)
-    for item in GATE.iterdir():
-        if item.name not in GATE_SKIP:
-            copy(item, out / item.name)
+    shutil.copytree(GATE, out, ignore=shutil.ignore_patterns(*GATE_SKIP, "__pycache__", "*.bak"))
     if not (GATE / "gate" / "preview-key.php").exists():
         print("  note: holidays/gate/preview-key.php not found (it's kept out of git); preview switch will be off")
     copy(SHARED / "fonts", out / "fonts")          # countdown pages
