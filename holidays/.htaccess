@@ -1,0 +1,10 @@
+# Holidays gate: every request in this folder goes through gate/gate.php; nothing is served straight from disk.
+# (On a web host, upload this file as ".htaccess" — your FTP client may hide files starting with a dot.)
+Options -Indexes
+DirectoryIndex disabled
+RewriteEngine On
+# Work out this folder's URL base on the fly (/ on holidays.theoutreachcc.com, /outreach/holidays/ locally)
+# and rewrite to an absolute path. Shared hosts like IONOS 404 on relative rewrite targets otherwise.
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond $0#%{REQUEST_URI} ^([^#]*)#(.*)\1$
+RewriteRule ^.*$ %2gate/gate.php [L,QSA]

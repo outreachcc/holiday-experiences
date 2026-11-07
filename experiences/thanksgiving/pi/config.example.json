@@ -1,0 +1,39 @@
+{
+  "station": "1",
+  "mode": "interactive",
+  "next": "right",
+  "idle": 90,
+  "volume": 0.9,
+  "ambient": true,
+  "captions": "follow",
+  "inviteHold": 0,
+  "port": 8080,
+  "bind": "0.0.0.0",
+  "buttons": {
+    "go": 17,
+    "back": 27,
+    "left": 22,
+    "right": 23
+  },
+  "lamp_pin": 12,
+  "leds": {
+    "driver": "none",
+    "count": 60,
+    "brightness": 0.5,
+    "order": "GRB",
+    "wled_host": "",
+    "wled_presets": {
+      "off": 0,
+      "idle": 1,
+      "night": 2,
+      "star": 3,
+      "angel": 4,
+      "manger": 5,
+      "journey": 6,
+      "candle": 7,
+      "celebrate": 8,
+      "harvest": 9
+    }
+  },
+  "counts_file": "counts.json"
+}

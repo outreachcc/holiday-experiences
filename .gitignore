@@ -1,0 +1,27 @@
+# build output (python build.py)
+dist/
+
+# secrets: the real preview key stays on this PC and the web host only
+preview-key.php
+
+# Pi station files made by pi/install.sh
+pi/venv/
+pi/config.json
+
+# Python / tools
+__pycache__/
+*.pyc
+venv/
+kenv/
+.venv/
+*.onnx
+voices-*.bin
+
+# rendered social videos (regenerate with social-shorts/tools)
+**/social-shorts/*.mp4
+
+# misc
+*.bak
+*.zip
+Thumbs.db
+.DS_Store

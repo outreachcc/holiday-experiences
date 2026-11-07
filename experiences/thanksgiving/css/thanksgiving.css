@@ -1,0 +1,48 @@
+/* Thanksgiving palette: harvest gold, pumpkin and deep cranberry-brown, on top of style.css */
+:root {
+  --night: #1c0f10;
+  --night-2: #3a1c18;
+  --ink: #f8ecd6;
+  --ink-dim: #d4c0a2;
+  --gold: #f0b85a;
+  --gold-deep: #c8762a;
+  --ember: #ff8a3a;
+  --glass: rgba(30, 14, 12, 0.72);
+}
+html, body { background: var(--night); }
+#home { background: radial-gradient(ellipse at 50% 115%, #7a3218 0%, #4a1e18 30%, var(--night-2) 55%, var(--night) 85%); }
+h1.title { text-shadow: 0 0 40px rgba(240, 160, 70, .4); }
+.station-card { background: rgba(58, 28, 24, .6); border-color: rgba(240, 184, 90, .25); }
+.station-card:hover { background: rgba(90, 40, 28, .75); }
+#stage { background: linear-gradient(180deg, #1c0f10, #3a1c18 55%, #140a0a); }
+.endcard { background: radial-gradient(ellipse at center, rgba(28, 15, 16, .55), rgba(28, 15, 16, .93)); }
+.attract { background: radial-gradient(ellipse at 50% 120%, rgba(120, 50, 24, .6), rgba(28, 15, 16, .88) 60%); }
+.verse { background: linear-gradient(180deg, rgba(24, 12, 6, .78), rgba(24, 12, 6, .62)); }
+
+/* film edition: when a verse subtitle is showing, captions move up above it */
+.ed-film #verse.on ~ #caption { bottom: calc(var(--verseH, 0px) + var(--u) * 4); }
+.ed-film .caption { transition: bottom .5s ease, opacity .4s; }
+
+/* sing-along words for songs inside a station: always on screen, independent of the caption setting */
+.singalong { position: absolute; left: 50%; bottom: calc(var(--u) * 4); transform: translate(-50%, 12px); width: min(90vw, calc(var(--u) * 120));
+  padding: calc(var(--u) * 1.6) calc(var(--u) * 3); text-align: center; border-radius: calc(var(--u) * 1.6);
+  background: rgba(24, 12, 6, .62); border: 1px solid rgba(240, 184, 90, .3); backdrop-filter: blur(3px);
+  opacity: 0; transition: opacity .8s, transform .8s; z-index: 6; pointer-events: none; }
+.singalong.on { opacity: 1; transform: translate(-50%, 0); }
+.singalong .sa-title { font-weight: 800; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); font-size: calc(var(--u) * 1.4); margin-bottom: calc(var(--u) * .8); }
+.singalong .sa-line { font-family: var(--serif); font-weight: 600; font-size: calc(var(--u) * 3); line-height: 1.25; color: rgba(248, 236, 214, .45); transition: color .35s, text-shadow .35s; }
+.singalong .sa-line.now { color: #fff6dc; text-shadow: 0 0 22px rgba(240, 184, 90, .75); }
+.singalong .sa-line.past { color: rgba(248, 236, 214, .7); }
+.singalong .sa-line.ball { line-height: 1.6; }
+.singalong .sy { transition: color .25s, text-shadow .25s; }
+.singalong .sa-line.now .sy { color: rgba(255, 246, 220, .6); text-shadow: none; }
+.singalong .sa-line .sy.sung { color: #fff6dc; }
+.singalong .sa-line .sy.on { color: #ffd67a; text-shadow: 0 0 18px rgba(255, 200, 100, .9); }
+.singalong .sa-ball { position: absolute; left: 0; top: 0; width: .36em; height: .36em; font-size: calc(var(--u) * 3); border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fffbe8, #ffd060 45%, #e09a20); box-shadow: 0 0 14px rgba(255, 200, 90, .9);
+  opacity: 0; pointer-events: none; transform-origin: 50% 100%; will-change: transform; }
+@media (max-aspect-ratio: 4/5) { .singalong { bottom: calc(5vh + 60px); width: 94vw; } .singalong .sa-line, .singalong .sa-ball { font-size: calc(var(--u) * 4.2); } }
+
+/* home page: six stations as two even rows of three */
+@media (min-width: 760px) { .stations-grid { grid-template-columns: repeat(3, 1fr); max-width: 900px; margin-left: auto; margin-right: auto; } }
+@media (min-width: 480px) and (max-width: 759px) { .stations-grid { grid-template-columns: repeat(2, 1fr); } }

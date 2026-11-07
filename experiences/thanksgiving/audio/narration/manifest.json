@@ -1,0 +1,1084 @@
+{
+ "gates.0.say": {
+  "file": "gates.0.say.mp3",
+  "hash": "33757a74",
+  "take": "e8936fe873misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    22.18
+   ]
+  ],
+  "v": "064bf933"
+ },
+ "gates.1.say": {
+  "file": "gates.1.say.mp3",
+  "hash": "91efa08",
+  "take": "f5c97d1fc7misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    12.5
+   ]
+  ],
+  "v": "cdde7fff"
+ },
+ "gates.2.say": {
+  "file": "gates.2.say.mp3",
+  "hash": "e5b5712b",
+  "take": "38d514aa88misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    4.79
+   ]
+  ],
+  "v": "7db384bb"
+ },
+ "gates.2.verse": {
+  "file": "gates.2.verse.mp3",
+  "hash": "8373e9e3",
+  "take": "73e56e1ff5misaki",
+  "voice": "david+narrator",
+  "segs": [
+   [
+    "david",
+    0.15,
+    7.96
+   ],
+   [
+    "narrator",
+    8.71,
+    11.46
+   ]
+  ],
+  "v": "e124456d"
+ },
+ "gates.2.after": {
+  "file": "gates.2.after.mp3",
+  "hash": "d51cb2f3",
+  "take": "d56d68c596misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    3.41
+   ]
+  ],
+  "v": "0eea84d9"
+ },
+ "gates.3.say": {
+  "file": "gates.3.say.mp3",
+  "hash": "6e3ef189",
+  "take": "6db14cd39dmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    8.64
+   ]
+  ],
+  "v": "51f606b8"
+ },
+ "gates.3.verse": {
+  "file": "gates.3.verse.mp3",
+  "hash": "c73525c9",
+  "take": "ee8ca387femisaki",
+  "voice": "david+narrator",
+  "segs": [
+   [
+    "david",
+    0.15,
+    8.07
+   ],
+   [
+    "narrator",
+    8.82,
+    10.89
+   ]
+  ],
+  "v": "012c1346"
+ },
+ "manna.0.say": {
+  "file": "manna.0.say.mp3",
+  "hash": "8d596ebc",
+  "take": "f333c514ccmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    12.36
+   ]
+  ],
+  "v": "bf5dd411"
+ },
+ "manna.1.say": {
+  "file": "manna.1.say.mp3",
+  "hash": "9432c56c",
+  "take": "e47738b38fmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    8.41
+   ]
+  ],
+  "v": "d02d7719"
+ },
+ "manna.1.verse": {
+  "file": "manna.1.verse.mp3",
+  "hash": "79c93d42",
+  "take": "6ebd097f1fmisaki",
+  "voice": "narrator+moses",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    2.12
+   ],
+   [
+    "moses",
+    2.67,
+    6.2
+   ],
+   [
+    "narrator",
+    6.95,
+    9.32
+   ]
+  ],
+  "v": "df3736b9"
+ },
+ "manna.1.after": {
+  "file": "manna.1.after.mp3",
+  "hash": "c8e752c9",
+  "take": "e03fc8058emisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    7.7
+   ]
+  ],
+  "v": "a7d582cf"
+ },
+ "manna.2.say": {
+  "file": "manna.2.say.mp3",
+  "hash": "9c485515",
+  "take": "f297c57873misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    6.84
+   ]
+  ],
+  "v": "86449bf1"
+ },
+ "manna.2.verse": {
+  "file": "manna.2.verse.mp3",
+  "hash": "b2e05e86",
+  "take": "c4efd27fb8misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    12.59
+   ],
+   [
+    "narrator",
+    13.34,
+    17.22
+   ]
+  ],
+  "v": "12e2060c"
+ },
+ "manna.2.after": {
+  "file": "manna.2.after.mp3",
+  "hash": "995e0840",
+  "take": "0896645ab1misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    8.07
+   ]
+  ],
+  "v": "b0163461"
+ },
+ "lepers.0.say": {
+  "file": "lepers.0.say.mp3",
+  "hash": "e35f10e0",
+  "take": "ac113c96bcmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    13.4
+   ]
+  ],
+  "v": "283c9326"
+ },
+ "lepers.0.verse": {
+  "file": "lepers.0.verse.mp3",
+  "hash": "f06408f",
+  "take": "9e096bab8emisaki",
+  "voice": "narrator+lepers",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    10.86
+   ],
+   [
+    "lepers",
+    11.41,
+    14.7
+   ],
+   [
+    "narrator",
+    15.45,
+    18.69
+   ]
+  ],
+  "v": "7f9517c4"
+ },
+ "lepers.1.say": {
+  "file": "lepers.1.say.mp3",
+  "hash": "36922285",
+  "take": "41cc2c3deamisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    5.79
+   ]
+  ],
+  "v": "559f6c1c"
+ },
+ "lepers.1.verse": {
+  "file": "lepers.1.verse.mp3",
+  "hash": "9158b9b4",
+  "take": "9b2200d53dmisaki",
+  "voice": "narrator+jesus",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    2.89
+   ],
+   [
+    "jesus",
+    3.44,
+    5.86
+   ],
+   [
+    "narrator",
+    6.61,
+    8.94
+   ]
+  ],
+  "v": "98d7848a"
+ },
+ "lepers.2.say": {
+  "file": "lepers.2.say.mp3",
+  "hash": "88b07d74",
+  "take": "ed1dfbc212misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    7.06
+   ]
+  ],
+  "v": "b08b38e2"
+ },
+ "lepers.2.after": {
+  "file": "lepers.2.after.mp3",
+  "hash": "d882f657",
+  "take": "78bfb2bfdbmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    2.4
+   ]
+  ],
+  "v": "92f4ff74"
+ },
+ "lepers.3.say": {
+  "file": "lepers.3.say.mp3",
+  "hash": "28834421",
+  "take": "6eb309bbfamisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    7.13
+   ]
+  ],
+  "v": "e7729a57"
+ },
+ "lepers.3.verse": {
+  "file": "lepers.3.verse.mp3",
+  "hash": "79b678b0",
+  "take": "08815a9137misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    10.85
+   ],
+   [
+    "narrator",
+    11.6,
+    15.05
+   ]
+  ],
+  "v": "22b3a0fc"
+ },
+ "lepers.4.say": {
+  "file": "lepers.4.say.mp3",
+  "hash": "ab6ce5e9",
+  "take": "9b44b419afmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    2.48
+   ]
+  ],
+  "v": "e1114da8"
+ },
+ "lepers.4.verse": {
+  "file": "lepers.4.verse.mp3",
+  "hash": "a6d5b77b",
+  "take": "d8add64bcbmisaki",
+  "voice": "narrator+jesus",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    2.09
+   ],
+   [
+    "jesus",
+    2.64,
+    14.1
+   ],
+   [
+    "narrator",
+    14.85,
+    18.23
+   ]
+  ],
+  "v": "22d6301e"
+ },
+ "lepers.5.verse": {
+  "file": "lepers.5.verse.mp3",
+  "hash": "59190d5e",
+  "take": "1c418d5169misaki",
+  "voice": "narrator+jesus",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    1.82
+   ],
+   [
+    "jesus",
+    2.37,
+    6.63
+   ],
+   [
+    "narrator",
+    7.38,
+    9.63
+   ]
+  ],
+  "v": "7d61b9a0"
+ },
+ "lepers.5.after": {
+  "file": "lepers.5.after.mp3",
+  "hash": "61923f66",
+  "take": "f47321ae02misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    10.41
+   ]
+  ],
+  "v": "a878ce57"
+ },
+ "loaves.0.say": {
+  "file": "loaves.0.say.mp3",
+  "hash": "d0b475e6",
+  "take": "ad04d6e558misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    13.93
+   ]
+  ],
+  "v": "4dc29a91"
+ },
+ "loaves.1.say": {
+  "file": "loaves.1.say.mp3",
+  "hash": "48daa98",
+  "take": "943a36c029misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    6.93
+   ]
+  ],
+  "v": "18b632ac"
+ },
+ "loaves.1.verse": {
+  "file": "loaves.1.verse.mp3",
+  "hash": "45e48d8a",
+  "take": "fe68bf5573misaki",
+  "voice": "andrew+narrator",
+  "segs": [
+   [
+    "andrew",
+    0.15,
+    7.18
+   ],
+   [
+    "narrator",
+    7.93,
+    9.67
+   ]
+  ],
+  "v": "7a053ea6"
+ },
+ "loaves.1.after": {
+  "file": "loaves.1.after.mp3",
+  "hash": "cc7f3310",
+  "take": "1e557c9763misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    4.08
+   ]
+  ],
+  "v": "9b8af2a5"
+ },
+ "loaves.2.say": {
+  "file": "loaves.2.say.mp3",
+  "hash": "56cba70",
+  "take": "f6bcb26720misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    9.98
+   ]
+  ],
+  "v": "8f8aad29"
+ },
+ "loaves.2.verse": {
+  "file": "loaves.2.verse.mp3",
+  "hash": "a1b65eb0",
+  "take": "5457edff56misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    15.55
+   ],
+   [
+    "narrator",
+    16.3,
+    18.23
+   ]
+  ],
+  "v": "28261765"
+ },
+ "loaves.2.after": {
+  "file": "loaves.2.after.mp3",
+  "hash": "158bd362",
+  "take": "66ea293bc6misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    9.25
+   ]
+  ],
+  "v": "ab3237ae"
+ },
+ "loaves.3.say": {
+  "file": "loaves.3.say.mp3",
+  "hash": "c1d222e2",
+  "take": "9a902c885cmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    3.25
+   ]
+  ],
+  "v": "f893c855"
+ },
+ "loaves.3.after": {
+  "file": "loaves.3.after.mp3",
+  "hash": "37f03e5b",
+  "take": "87db941c9amisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    4.77
+   ]
+  ],
+  "v": "f2cdb252"
+ },
+ "loaves.4.verse": {
+  "file": "loaves.4.verse.mp3",
+  "hash": "b46439ab",
+  "take": "90674424c9misaki",
+  "voice": "narrator+jesus",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    3.58
+   ],
+   [
+    "jesus",
+    4.13,
+    9.11
+   ],
+   [
+    "narrator",
+    9.86,
+    11.7
+   ]
+  ],
+  "v": "01be0192"
+ },
+ "loaves.5.say": {
+  "file": "loaves.5.say.mp3",
+  "hash": "638ea180",
+  "take": "20d0658579misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    4.35
+   ]
+  ],
+  "v": "d767f621"
+ },
+ "loaves.5.verse": {
+  "file": "loaves.5.verse.mp3",
+  "hash": "1b27818c",
+  "take": "fc08010d6cmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    9.88
+   ],
+   [
+    "narrator",
+    10.63,
+    12.54
+   ]
+  ],
+  "v": "b68c0557"
+ },
+ "loaves.5.after": {
+  "file": "loaves.5.after.mp3",
+  "hash": "947dc6a1",
+  "take": "6fb16547c1misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    10.37
+   ]
+  ],
+  "v": "c6781125"
+ },
+ "midnight.0.say": {
+  "file": "midnight.0.say.mp3",
+  "hash": "5dd610b7",
+  "take": "7ef1fd4c22misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    13.52
+   ]
+  ],
+  "v": "719ee3ef"
+ },
+ "midnight.1.say": {
+  "file": "midnight.1.say.mp3",
+  "hash": "43d20d2a",
+  "take": "0fb14f33fcmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    9.34
+   ]
+  ],
+  "v": "d6924836"
+ },
+ "midnight.1.verse": {
+  "file": "midnight.1.verse.mp3",
+  "hash": "84872c11",
+  "take": "801809a4a5misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    8.31
+   ],
+   [
+    "narrator",
+    9.06,
+    11.41
+   ]
+  ],
+  "v": "9c023fa0"
+ },
+ "midnight.2.say": {
+  "file": "midnight.2.say.mp3",
+  "hash": "bffe9abe",
+  "take": "a777d3283emisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    4.49
+   ]
+  ],
+  "v": "ad6b832b"
+ },
+ "midnight.2.verse": {
+  "file": "midnight.2.verse.mp3",
+  "hash": "c1f740c8",
+  "take": "4752200ed4misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    10.3
+   ],
+   [
+    "narrator",
+    11.05,
+    13.31
+   ]
+  ],
+  "v": "65fe7d96"
+ },
+ "midnight.2.after": {
+  "file": "midnight.2.after.mp3",
+  "hash": "558907f4",
+  "take": "d728b93040misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    4.49
+   ]
+  ],
+  "v": "52c9d1a2"
+ },
+ "midnight.3.say": {
+  "file": "midnight.3.say.mp3",
+  "hash": "31715f00",
+  "take": "6b900473ebmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    6.15
+   ]
+  ],
+  "v": "caf53297"
+ },
+ "midnight.3.verse": {
+  "file": "midnight.3.verse.mp3",
+  "hash": "141f8ed2",
+  "take": "88ecefbaf3misaki",
+  "voice": "paul+narrator",
+  "segs": [
+   [
+    "paul",
+    0.15,
+    7.92
+   ],
+   [
+    "narrator",
+    8.67,
+    11.62
+   ]
+  ],
+  "v": "4448132a"
+ },
+ "midnight.3.after": {
+  "file": "midnight.3.after.mp3",
+  "hash": "d9a3d147",
+  "take": "3cb2f90b6emisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    3.36
+   ]
+  ],
+  "v": "3a3986d1"
+ },
+ "midnight.4.say": {
+  "file": "midnight.4.say.mp3",
+  "hash": "8e4f0a62",
+  "take": "a2311899aamisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    3.31
+   ]
+  ],
+  "v": "2d7a47f7"
+ },
+ "midnight.4.verse": {
+  "file": "midnight.4.verse.mp3",
+  "hash": "7cf44bc6",
+  "take": "80a733fb5cmisaki",
+  "voice": "paul+narrator",
+  "segs": [
+   [
+    "paul",
+    0.15,
+    11.28
+   ],
+   [
+    "narrator",
+    12.03,
+    14.01
+   ]
+  ],
+  "v": "0f35ff0b"
+ },
+ "midnight.4.after": {
+  "file": "midnight.4.after.mp3",
+  "hash": "10bc0c24",
+  "take": "b6e88bb6a8misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    7.57
+   ]
+  ],
+  "v": "eca7c89a"
+ },
+ "tree.0.say": {
+  "file": "tree.0.say.mp3",
+  "hash": "b46cae72",
+  "take": "e4973847d5misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    12.18
+   ]
+  ],
+  "v": "3e15b1a4"
+ },
+ "tree.0.verse": {
+  "file": "tree.0.verse.mp3",
+  "hash": "18f2ea25",
+  "take": "3a4e2ace34misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    12.8
+   ],
+   [
+    "narrator",
+    13.55,
+    15.5
+   ]
+  ],
+  "v": "35d049b9"
+ },
+ "tree.1.say": {
+  "file": "tree.1.say.mp3",
+  "hash": "3d3a5f5d",
+  "take": "cdbf1355f1misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    5.47
+   ]
+  ],
+  "v": "35bfbd23"
+ },
+ "tree.1.after": {
+  "file": "tree.1.after.mp3",
+  "hash": "43d9b528",
+  "take": "64280de768misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    3.95
+   ]
+  ],
+  "v": "2f0fdbcd"
+ },
+ "tree.2.say": {
+  "file": "tree.2.say.mp3",
+  "hash": "a42173f",
+  "take": "18ae0f490bmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    9.37
+   ]
+  ],
+  "v": "9a98c6a3"
+ },
+ "tree.2.verse": {
+  "file": "tree.2.verse.mp3",
+  "hash": "17887d1f",
+  "take": "a1e96ff56dmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    2.96
+   ],
+   [
+    "narrator",
+    3.71,
+    6.53
+   ]
+  ],
+  "v": "0f32201e"
+ },
+ "tree.2.after": {
+  "file": "tree.2.after.mp3",
+  "hash": "31e178c0",
+  "take": "faa0308270misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    5.04
+   ]
+  ],
+  "v": "a1658bf3"
+ },
+ "tree.3.say": {
+  "file": "tree.3.say.mp3",
+  "hash": "ea371d74",
+  "take": "e61cf5b877misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    6.42
+   ]
+  ],
+  "v": "e805e014"
+ },
+ "tree.4.say": {
+  "file": "tree.4.say.mp3",
+  "hash": "3dd8c0d6",
+  "take": "ef158756e1misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    5.86
+   ]
+  ],
+  "v": "ea449414"
+ },
+ "lepers.healed1": {
+  "file": "lepers.healed1.mp3",
+  "hash": "7bcab20b",
+  "take": "d824684df9misaki",
+  "voice": "healed1",
+  "segs": [
+   [
+    "healed1",
+    0.15,
+    2.0
+   ]
+  ],
+  "v": "de1eebb0"
+ },
+ "lepers.healed2": {
+  "file": "lepers.healed2.mp3",
+  "hash": "4342ac07",
+  "take": "84fe198aa8misaki",
+  "voice": "healed2",
+  "segs": [
+   [
+    "healed2",
+    0.15,
+    1.93
+   ]
+  ],
+  "v": "a42da703"
+ },
+ "gates.3.after": {
+  "file": "gates.3.after.mp3",
+  "hash": "1e1472b7",
+  "take": "d596058186misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    5.83
+   ]
+  ],
+  "v": "f33a80c7"
+ },
+ "gates.4.say": {
+  "file": "gates.4.say.mp3",
+  "hash": "3613efd1",
+  "take": "3ab4541cbfmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    5.98
+   ]
+  ],
+  "v": "79d9eed5"
+ },
+ "gates.4.verse": {
+  "file": "gates.4.verse.mp3",
+  "hash": "e12c0a95",
+  "take": "735e394e5fmisaki",
+  "voice": "david+narrator",
+  "segs": [
+   [
+    "david",
+    0.15,
+    5.64
+   ],
+   [
+    "narrator",
+    6.39,
+    8.83
+   ]
+  ],
+  "v": "56de603f"
+ },
+ "gates.4.after": {
+  "file": "gates.4.after.mp3",
+  "hash": "42ad3724",
+  "take": "9d660e083cmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    5.75
+   ]
+  ],
+  "v": "e8a25abe"
+ },
+ "midnight.5.say": {
+  "file": "midnight.5.say.mp3",
+  "hash": "b17410b3",
+  "take": "dc3f079c9fmisaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    15.2
+   ]
+  ],
+  "v": "f1ef6cda"
+ },
+ "midnight.6.say": {
+  "file": "midnight.6.say.mp3",
+  "hash": "47968ba3",
+  "take": "687ea51174misaki",
+  "voice": "narrator",
+  "segs": [
+   [
+    "narrator",
+    0.15,
+    19.46
+   ]
+  ],
+  "v": "1ab367da"
+ }
+}

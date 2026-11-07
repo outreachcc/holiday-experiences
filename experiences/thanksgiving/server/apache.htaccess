@@ -1,0 +1,7 @@
+# Rename this file to .htaccess in the site's web folder (your FTP client may hide files starting with a dot).
+# Every request goes through the season gate; nothing is served straight from disk.
+Options -Indexes
+DirectoryIndex disabled
+RewriteEngine On
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^ gate/gate.php [L,QSA]

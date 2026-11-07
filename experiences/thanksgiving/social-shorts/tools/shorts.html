@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shorts</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/thanksgiving.css">
+<style>
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #140a0b; }
+  #frame { position: relative; width: 1080px; height: 1920px; overflow: hidden;
+    background: radial-gradient(ellipse at 50% 40%, #3a1d14 0%, #1c0f10 55%, #0e0708 100%); color: #f8ecd6; font-family: "Nunito", sans-serif; }
+  #top { position: absolute; left: 60px; right: 60px; top: 150px; height: 270px; text-align: center; }
+  #eyebrow { font-weight: 800; letter-spacing: .32em; text-transform: uppercase; color: #f0b85a; font-size: 30px; }
+  #hook { font-family: "Cormorant", serif; font-weight: 700; font-size: 84px; line-height: 1.02; margin-top: 18px; color: #fff4dc;
+    text-shadow: 0 4px 30px rgba(0,0,0,.6); transition: opacity .8s; }
+  #film { position: absolute; left: 0; top: 440px; width: 1080px; height: 1080px; overflow: hidden; }
+  #film::before, #film::after { content: ""; position: absolute; left: 0; right: 0; height: 90px; z-index: 2; pointer-events: none; }
+  #film::before { top: 0; background: linear-gradient(#1c0f10, rgba(28,15,16,0)); }
+  #film::after { bottom: 0; background: linear-gradient(rgba(28,15,16,0), #1c0f10); }
+  #scene { position: absolute; inset: 0; width: 100%; height: 100%; }
+  #scene svg { width: 100%; height: 100%; display: block; }
+  #cap { position: absolute; left: 50px; right: 50px; top: 1545px; height: 250px; display: grid; place-items: center; text-align: center; }
+  #capText { font-weight: 800; font-size: 50px; line-height: 1.22; text-shadow: 0 3px 14px rgba(0,0,0,.8); transition: opacity .25s; }
+  #capText.isverse { font-family: "Cormorant", serif; font-weight: 700; font-size: 62px; line-height: 1.1; color: #fff4dc; }
+  #capText .w { opacity: .4; }
+  #capText .w.lit { opacity: 1; }
+  #capText .ref { display: block; font-family: "Nunito", sans-serif; font-style: normal; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: #f0b85a; font-size: 30px; margin-top: 16px; }
+  #foot { position: absolute; left: 0; right: 0; top: 1820px; text-align: center; font-weight: 800; font-size: 30px; letter-spacing: .06em; color: rgba(240,184,90,.85); }
+  #end { position: absolute; inset: 0; z-index: 20; display: grid; place-items: center; text-align: center; opacity: 0; transition: opacity 1s;
+    background: radial-gradient(ellipse at 50% 45%, rgba(70,32,18,.96), rgba(18,9,10,.985) 70%); }
+  #end.on { opacity: 1; }
+  #end .in { padding: 0 70px; }
+  #end .k { font-weight: 800; letter-spacing: .34em; text-transform: uppercase; color: #f0b85a; font-size: 32px; }
+  #end h1 { font-family: "Cormorant", serif; font-weight: 700; font-size: 128px; line-height: .98; margin: 26px 0 10px; color: #fff4dc; }
+  #end .yr { font-family: "Cormorant", serif; font-weight: 600; font-size: 70px; color: #f0b85a; }
+  #end .sub { font-size: 40px; font-weight: 600; color: rgba(248,236,214,.85); margin: 34px auto 0; max-width: 820px; line-height: 1.3; }
+  #end .when { display: inline-block; margin-top: 60px; padding: 22px 48px; border-radius: 999px; background: linear-gradient(180deg,#ffd889,#c88a2a); color: #2a1600; font-weight: 800; font-size: 50px; }
+  #end .url { margin-top: 44px; font-weight: 800; font-size: 46px; color: #fff4dc; }
+  #end .ch { margin-top: 18px; font-size: 34px; color: rgba(248,236,214,.75); }
+  #end .leaf { position: absolute; }
+</style>
+</head>
+<body>
+<div id="frame">
+  <div id="top"><div id="eyebrow">The Thanksgiving Experience</div><div id="hook"></div></div>
+  <div id="film"><div id="scene"></div></div>
+  <div id="cap"><div id="capText"></div></div>
+  <div id="foot">holidays.theoutreachcc.com</div>
+  <div id="end"><div class="in">
+    <div class="k">Outreach Christian Church</div>
+    <h1>The Thanksgiving Experience</h1>
+    <div class="yr">2026</div>
+    <div class="sub">Six Bible stories of giving thanks, animated. Watch free online.</div>
+    <div class="when">Open November 1 – 28</div>
+    <div class="url">holidays.theoutreachcc.com</div>
+    <div class="ch">Coraopolis, PA · Sundays at 10:00 AM</div>
+  </div></div>
+</div>
+
+<script>
+  // Sound effects and the soft background bells are made by the real audio engine, but into an offline
+  // recording that follows the virtual clock; it's mixed with the narration afterwards.
+  window.__offline = null;
+  window.AudioContext = function () {
+    const c = new OfflineAudioContext(2, 44100 * 70, 44100);
+    Object.defineProperty(c, "currentTime", { get: () => window.__vt.now / 1000 });
+    Object.defineProperty(c, "state", { get: () => "running" });
+    c.resume = () => Promise.resolve(); c.suspend = () => Promise.resolve();
+    window.__offline = c; return c;
+  };
+  window.webkitAudioContext = window.AudioContext;
+</script>
+<script src="audio/narration/manifest.js"></script>
+<script src="js/content.js"></script>
+<script src="js/audio.js"></script>
+<script src="audio/narration/envelopes.js"></script>
+<script src="js/film-core.js"></script>
+<script src="js/film-scenes.js"></script>
+<script>
+(function () {
+  const A = window.XAudio, STORY = window.STORY, ENV = window.NARRATION_ENVELOPES;
+  const $ = s => document.querySelector(s);
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  const DUR = window.__DURS || {};          // seconds, from the mp3 files
+  const cues = window.__cues = [];          // narration placed on the timeline: {id, at, trim}
+  let cur = null;                           // line being spoken: {id, t0, len}
+  let scene = null, F = null;
+
+  const stepOf = (st, i) => STORY.stations.find(s => s.id === st).steps[i];
+  const spokenRef = ref => ref.replace(/(\d+):(\d+)-(\d+)/, "$1, verses $2 to $3").replace(/(\d+):(\d+)/, "$1, verse $2") + ".";
+  const api = {
+    sfx: n => A.sfx(n), voice: () => Promise.resolve(), clip: () => Promise.resolve(), count: () => {}, shared: () => false,
+    audioTime: () => cur ? (performance.now() - cur.t0) / 1000 : null, alive: () => true, hasClip: () => false, bubble() {}
+  };
+
+  // ---- captions: the line is cut into short phrases; words light up as the voice reaches them
+  let capState = null;
+  function chunk(words) {
+    const out = []; let c = [];
+    words.forEach((w, k) => {
+      c.push(k);
+      const n = c.length;
+      const end = (/[.!?]$/.test(w.t) && n >= 3) || (/[;:]$/.test(w.t) && n >= 5) || (/,$/.test(w.t) && n >= 7) || n >= 11;
+      if (end) { out.push(c); c = []; }
+    });
+    if (c.length) out.push(c);
+    return out;
+  }
+  function setCaption(id, text, isVerse, ref, trimSec) {
+    const words = text.split(/\s+/).filter(Boolean).map(t => ({ t, wt: t.replace(/[^\w']/g, "").length + 1.5 }));
+    let refW = 0;
+    if (isVerse) refW = spokenRef(ref).split(/\s+/).reduce((a, w) => a + w.replace(/[^\w']/g, "").length + 1.5, 0);
+    let tot = 0; words.forEach(w => { w.at = tot; tot += w.wt; });
+    const env = (ENV[id] || {}).env || "";
+    const frames = trimSec ? Math.min(env.length, Math.round(trimSec * 30)) : env.length;
+    const voiced = new Float32Array(frames + 1);
+    for (let i = 0; i < frames; i++) voiced[i + 1] = voiced[i] + (+env[i] >= 2 ? 1 : 0);
+    capState = { words, chunks: chunk(words), tot: tot + refW, voiced, isVerse, ref, shown: -1 };
+    $("#capText").className = isVerse ? "isverse" : "";
+  }
+  function paintCaption() {
+    const c = capState, el = $("#capText");
+    if (!c) { el.innerHTML = ""; return; }
+    let pos = 0;
+    if (cur) {
+      const t = (performance.now() - cur.t0) / 1000, v = c.voiced, n = v.length - 1;
+      pos = (n ? v[Math.min(n, Math.max(0, Math.floor(t * 30)))] / v[n] : 0) * c.tot;
+    } else pos = c.tot;
+    let ci = c.chunks.findIndex(ch => ch.some(k => c.words[k].at + 0.3 >= pos));
+    if (ci < 0) ci = c.chunks.length - 1;
+    const html = c.chunks[ci].map(k => `<span class="w${c.words[k].at <= pos + 0.3 ? " lit" : ""}">${c.words[k].t}</span>`).join(" ")
+      + (c.isVerse && ci === c.chunks.length - 1 ? `<span class="ref">${c.ref} KJV</span>` : "");
+    if (el.innerHTML !== html) el.innerHTML = html;
+  }
+  function loop() { paintCaption(); pan(); requestAnimationFrame(loop); }
+
+  // ---- which part of the 1600x900 picture the square shows (x of its left edge), eased
+  let vx = 350, vxTo = 350, vxFrom = 350, vxT0 = 0, vxDur = 1;
+  function panTo(x, ms = 2500) { vxFrom = vx; vxTo = x; vxT0 = performance.now(); vxDur = ms; }
+  function pan() {
+    const k = Math.min(1, (performance.now() - vxT0) / vxDur), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+    vx = vxFrom + (vxTo - vxFrom) * e;
+    if (F) F.svg.setAttribute("viewBox", `${vx.toFixed(1)} 0 900 900`);
+  }
+
+  // ---- narration
+  async function line(st, i, part, o = {}) {
+    const step = stepOf(st, i), id = `${st}.${i}.${part}`;
+    const isVerse = part === "verse";
+    const text = o.text || (isVerse ? step.verse.text : step[part]);
+    const len = o.trim || DUR[id];
+    setCaption(id, text, isVerse, isVerse ? step.verse.ref : "", o.trim);
+    cues.push({ id, at: performance.now(), trim: o.trim || 0 });
+    cur = { id, t0: performance.now(), len };
+    if (isVerse) scene.speaking(id, step.verse);
+    await wait(len * 1000);
+    cur = null;
+    const mine = capState; setTimeout(() => { if (capState === mine && !cur) capState = null; }, 900);
+    if (isVerse && !o.keep) scene.speaking(null);
+  }
+  const hook = t => { $("#hook").innerHTML = t; };
+
+  function build(name) {
+    $("#scene").innerHTML = "";
+    scene = window.XScenes[name]($("#scene"), api);
+    F = window.__film; F.svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+  }
+  const tap = (task) => new Promise(r => { scene.startTask(task, r); setTimeout(() => scene.press(), 30); });
+
+  const SHORTS = {
+    // 1. Giving thanks is older than 1621 (David, Psalm 107:1)
+    async gates() {
+      hook("Giving thanks is older<br>than 1621.");
+      build("gates"); scene.enter(0, stepOf("gates", 0)); vx = vxTo = vxFrom = 360;
+      A.ambient(true);
+      await wait(2300);
+      scene.enter(1, stepOf("gates", 1)); panTo(350, 3000);
+      await line("gates", 1, "say");
+      await wait(300);
+      scene.enter(2, stepOf("gates", 2)); vx = vxTo = vxFrom = 300;
+      await wait(900);
+      tap("harp"); panTo(370, 2600);
+      await wait(2300);
+      panTo(310, 2400);
+      await line("gates", 4, "verse");
+      await wait(400);
+      await line("gates", 4, "after");
+      await wait(700);
+    },
+    // 2. Ten were healed. Only one came back.
+    async lepers() {
+      hook("Ten were healed.<br>Only one came back.");
+      build("lepers"); scene.enter(0, stepOf("lepers", 0));
+      // set the stage off camera: the ten have been sent on their way and healed
+      scene.enter(2, stepOf("lepers", 2)); tap("go");
+      return "pre";
+    },
+    async lepers2() {
+      vx = vxTo = vxFrom = 80;
+      A.ambient(true);
+      scene.enter(3, stepOf("lepers", 3)); panTo(150, 5000);
+      await line("lepers", 3, "say", { trim: 5.1, text: "Nine of the men kept running, home to their families. But one of them stopped." });
+      await wait(200);
+      tap("return"); panTo(430, 4200);
+      await wait(4800);
+      scene.enter(4, stepOf("lepers", 4)); panTo(420, 3000);
+      await line("lepers", 4, "say");
+      await wait(250);
+      panTo(640, 2000);
+      await line("lepers", 4, "verse");
+      await wait(300);
+      scene.enter(5, stepOf("lepers", 5)); scene.speaking(null); panTo(330, 2500);
+      await wait(500);
+      await line("lepers", 5, "after");
+      await wait(600);
+    },
+    // 3. Before anyone ate, Jesus gave thanks
+    async loaves() {
+      hook("Before anyone ate,<br>Jesus did this.");
+      build("loaves"); scene.enter(0, stepOf("loaves", 0)); scene.enter(1, stepOf("loaves", 1)); tap("lunch");
+      return "pre";
+    },
+    async loaves2() {
+      A.ambient(true);
+      scene.enter(2, stepOf("loaves", 2)); vx = vxTo = vxFrom = 230;
+      await wait(1300);
+      panTo(400, 18000);
+      await line("loaves", 2, "verse");
+      await wait(300);
+      scene.enter(3, stepOf("loaves", 3)); vx = vxTo = vxFrom = 420; panTo(330, 9000);
+      setTimeout(() => tap("share"), 4200);
+      await line("loaves", 2, "after");
+      await wait(300);
+      await line("loaves", 3, "after");
+      await wait(900);
+    }
+  };
+
+  window.__start = async function (name) {
+    await document.fonts.ready;
+    A.unlock();
+    requestAnimationFrame(loop);
+    window.__done = false; window.__phase = "run";
+    const r = await SHORTS[name]();
+    if (r === "pre") { window.__phase = "pre"; return; }
+    $("#end").classList.add("on"); $("#capText").innerHTML = "";
+    await wait(4500);
+    window.__done = true;
+  };
+  window.__continue = async function (name) {
+    window.__phase = "run";
+    await SHORTS[name + "2"]();
+    capState = null;
+    $("#end").classList.add("on");
+    await wait(4500);
+    window.__done = true;
+  };
+  window.__renderAudio = async function () {
+    const buf = await window.__offline.startRendering();
+    const n = Math.min(buf.length, Math.ceil(window.__vt.now / 1000 * 44100) + 4410);
+    const L = buf.getChannelData(0), R = buf.getChannelData(1);
+    const out = new Int16Array(n * 2);
+    for (let i = 0; i < n; i++) { out[2 * i] = Math.max(-1, Math.min(1, L[i])) * 32767; out[2 * i + 1] = Math.max(-1, Math.min(1, R[i])) * 32767; }
+    const bytes = new Uint8Array(out.buffer); let s = "";
+    for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+    return btoa(s);
+  };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# Self-host the online version:   cd server && docker compose up -d   ->  http://<host>:8088/
+# Put it behind your existing reverse proxy (or edit the port) and point a subdomain at it.
+# nginx serves the files; the small PHP container decides what is allowed (season gate + preview switch).
+name: christmas-experience
+services:
+  christmas:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "8088:80"
+    volumes:
+      - ..:/srv/app:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - christmas-gate
+  christmas-gate:
+    image: php:8.3-fpm-alpine
+    restart: unless-stopped
+    volumes:
+      - ..:/srv/app:ro
