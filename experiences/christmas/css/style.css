@@ -253,3 +253,22 @@ body.is-paused .pause-veil { display: grid; }
   html.ed-film .verse q, html.ed-media .verse q { font-size: max(15px, calc(var(--u) * 2.25)); }   /* readable on a narrow screen */
   html.ed-film .verse cite, html.ed-media .verse cite { font-size: max(10px, calc(var(--u) * 1.15)); }
 }
+
+/* iPhone Dynamic Island / notch / rounded corners. viewport-fit=cover lets the picture run edge to edge, so the
+   overlays (badge, dots, controls, captions, verse, sing-along) are kept inside the phone's safe area instead.
+   The insets are 0 on desktops, most Android phones and the Pi kiosk, so nothing moves there. */
+:root { --sl: env(safe-area-inset-left, 0px); --sr: env(safe-area-inset-right, 0px); --st: env(safe-area-inset-top, 0px); --sb: env(safe-area-inset-bottom, 0px);
+  --safeW: calc(100vw - 2 * max(var(--sl), var(--sr)) - 16px); }   /* widest a centred overlay can be */
+.home-inner { padding-left: max(20px, var(--sl)); padding-right: max(20px, var(--sr)); padding-top: calc(7vh + var(--st)); }
+.badge { top: calc(var(--u) * 2.2 + var(--st)); left: calc(var(--u) * 2.4 + var(--sl)); }
+.caption, .verse, .singalong, .prompt { max-width: var(--safeW); }
+@media not all and (max-aspect-ratio: 4/5) {   /* sideways / landscape: controls are top-right */
+  .dots { top: calc(var(--u) * 3.2 + var(--st)); right: calc(var(--u) * 2.6 + var(--sr)); }
+  .nav { top: calc(var(--u) * 8.5 + var(--st)); right: calc(var(--u) * 2.4 + var(--sr)); }
+  .cc-toast { top: calc(var(--u) * 8.5 + 54px + var(--st)); right: calc(var(--u) * 2.4 + var(--sr)); }
+  .invite { right: calc(var(--u) * 5 + var(--sr)); }
+  .prompt { bottom: calc(var(--u) * 3 + var(--sb)); }
+  html.ed-film .verse, html.ed-media .verse { bottom: calc(var(--u) * 2.4 + var(--sb)); }
+  html .singalong { bottom: calc(var(--u) * 4 + var(--sb)); }
+  html.ed-film #verse.on ~ #caption, html.ed-media #verse.on ~ #caption { bottom: calc(var(--verseH, 0px) + var(--u) * 4 + var(--sb)); }
+}
